@@ -1,62 +1,61 @@
-* {
-  margin: 0;
+*{
   padding: 0;
-  box-sizing: border-box;
+  margin: 0;
+  
 }
-html,
-body {
-  background-color: #05042d;
-}
-nav.top {
+label,input{
+  display: block;
+  line-height: 30px;
+  height: 30px;
+  outline: none;
+  font-size: 13pt;
   width: 100%;
-  height: 70px;
-  background-color: white;
+}
+form{
+  width: 330px;
+  background-color: rgba(0,0,0,.2);
   padding: 20px;
+  margin: 30px auto;
 }
-nav.top > img {
-  width: 140px;
-}
-nav .login {
-  width: 40px;
-  float: right;
-  margin-right: 25px;
-  color: #fe7c11;
-}
-nav .login img {
-  width: 30px;
-  height: 30px;
-  transition: 0.7s;
-}
-/*nav .login img:hover {
-  width: 40px;
-  height: 40px;
-}*/
+input[type="submit"]{
+  margin-top: 10px;
 
-/*-----------------header-Menu-------------*/
-
-#header {
-  max-width: 1280px;
-  height: 60px;
+}
+#cadastro{
+  width: 30%;
+  float: left;
+  background-color: #05042D;
   color: white;
-  display: inline-block;
-  margin-left: 10px;
 }
-
-ul {
-  width: 500px;
-  height: 50px;
+#tabela{
+  width: 65%;
+  height: 500px;
+  float: left;
+  margin-top: 10px;
+  background-color: #FE7C11;
 }
-ul li {
-  display: inline-block;
-  margin-top: 20px;
+table{
+  padding-top: 20px;
+  background-color: rgba(0,0,0,.2);
+  width: 100%;
+  margin: auto;
 }
-ul li a {
-  height: 30px;
-  transition: 0.2s;
+tr{
+  line-height: 30px;
+  
+}
+tr#titulo{
+  font-weight: bold;
+  background-color: rgba(0,0,0,.6);
+  color: white;
+}
+td{
+  padding: 0px 5px;
+}
+a{
+  background-color: white;
+  color: black;
+  padding: 5px;
+  margin: 0 5px;
   text-decoration: none;
-
-  color: white;
-}
-ul li a:hover {
-  color: #fe7c11;
 }
