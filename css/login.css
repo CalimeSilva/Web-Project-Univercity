@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  outline: none;
+}
+body,
+html {
+  width: 100%;
+  height: 100vh;
+  font-size: 16px;
+  background-color: rgb(5, 4, 45);
+  color: white;
+}
+
+nav.top {
+  width: 100%;
+  height: 70px;
+  background-color: white;
+  padding: 20px;
+}
+nav.top > img {
+  width: 140px;
+}
+nav .home {
+  width: 60px;
+  float: right;
+  margin-right: 25px;
+  transition: 0.4s;
+}
+nav a {
+  color: #fe7c11;
+  text-decoration: none;
+}
+nav .home:hover {
+  border-left: 10px solid #fe7c11;
+}
+/*-----------------Formulario do Login-------------*/
+form {
+  background-color: #fe7c11;
+  width: 400px;
+  position: absolute;
+  padding: 40px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-top-left-radius: 130px;
+}
+form h1 {
+  margin: 20px 20px;
+}
+input[type='text'],
+input[type='password'] {
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  background: none;
+  border: 2px solid rgb(5, 4, 45);
+  border-radius: 9px;
+  transition: 0.5s;
+}
+input[type='text']:focus,
+input[type='password']:focus {
+  border-left: 40px solid rgb(5, 4, 45);
+}
+
+input[type='submit'] {
+  background: none;
+  border: 2px solid rgb(5, 4, 45);
+  padding: 10px 10px;
+  width: 100px;
+  border-radius: 10px;
+  margin-left: 100px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+input[type='submit']:hover {
+  border-left: 40px solid rgb(5, 4, 45);
+}
+form p {
+  font-size: 15px;
+}
+form p > a {
+  color: rgb(5, 4, 45);
+}

@@ -1,0 +1,61 @@
+*{
+  padding: 0;
+  margin: 0;
+  
+}
+label,input{
+  display: block;
+  line-height: 30px;
+  height: 30px;
+  outline: none;
+  font-size: 13pt;
+  width: 100%;
+}
+form{
+  width: 330px;
+  background-color: rgba(0,0,0,.2);
+  padding: 20px;
+  margin: 30px auto;
+}
+input[type="submit"]{
+  margin-top: 10px;
+
+}
+#cadastro{
+  width: 30%;
+  float: left;
+  background-color: #05042D;
+  color: white;
+}
+#tabela{
+  width: 65%;
+  height: 500px;
+  float: left;
+  margin-top: 10px;
+  background-color: #FE7C11;
+}
+table{
+  padding-top: 20px;
+  background-color: rgba(0,0,0,.2);
+  width: 100%;
+  margin: auto;
+}
+tr{
+  line-height: 30px;
+  
+}
+tr#titulo{
+  font-weight: bold;
+  background-color: rgba(0,0,0,.6);
+  color: white;
+}
+td{
+  padding: 0px 5px;
+}
+a{
+  background-color: white;
+  color: black;
+  padding: 5px;
+  margin: 0 5px;
+  text-decoration: none;
+}

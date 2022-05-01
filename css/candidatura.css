@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  background-color: #05042d;
+}
+nav.top {
+  width: 100%;
+  height: 70px;
+  background-color: white;
+  padding: 20px;
+}
+nav.top > img {
+  width: 140px;
+}
+nav .login {
+  width: 40px;
+  float: right;
+  margin-right: 25px;
+  color: #fe7c11;
+}
+nav .login img {
+  width: 30px;
+  height: 30px;
+  transition: 0.7s;
+}
+/*nav .login img:hover {
+  width: 40px;
+  height: 40px;
+}*/
+
+/*-----------------header-Menu-------------*/
+
+#header {
+  max-width: 1280px;
+  height: 60px;
+  color: white;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+ul {
+  width: 500px;
+  height: 50px;
+}
+ul li {
+  display: inline-block;
+  margin-top: 20px;
+}
+ul li a {
+  height: 30px;
+  transition: 0.2s;
+  text-decoration: none;
+
+  color: white;
+}
+ul li a:hover {
+  color: #fe7c11;
+}

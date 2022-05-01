@@ -1,0 +1,138 @@
+*{
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+body,html{
+  height: 100%;
+}
+
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+
+.menu-lateral{
+  position: fixed;
+  background-color:rgb(5, 4, 45);
+  width: 20vw;
+  min-height: 100vh;
+  display: flex;
+  color: white;
+  flex-direction: column;
+}
+.menu-lateral h2{
+  padding: 10px 40px;
+  margin-top: 30px;
+}
+.menu-lateral li{
+  font-size: 20px;
+  padding: 10px 40px;
+  color: white;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+}
+.menu-lateral li:hover{
+  background: white;
+  color: rgb(5, 4, 45);
+  cursor: pointer;
+}
+.container{
+  position: absolute;
+  right: 0;
+  width: 80vw;
+  height: 100vh;
+  background-color: white;
+ 
+}
+.container .header{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 80vw;
+  height: 10vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 4px 8px 0 rgb(5, 4, 45);
+}
+.container .header .nav{
+  width: 90%;
+  display: flex;
+  align-items: center;
+}
+.container .header .nav .pesquisar{
+  flex: 3;
+}
+.container .header .nav .pesquisar input[type=text]{
+  border: none;
+  background: #f1f1f1;
+  padding: 10px;
+  width: 50%;
+}
+
+.container .header .nav .user{
+  flex: 1; 
+}
+.btn{
+  color: rgb(5, 4, 45);
+  background-color: white;
+  text-align: center;
+  padding: 3px 8px;
+  transition: 0.3s;
+}
+.btn:hover{
+  color: white;
+  background-color:  rgb(5, 4, 45);
+  border: 2px solid white;
+  padding: 3px 8px;
+}
+
+.container .content {
+  position: relative;
+  margin-top: 10vh;
+  min-height: 90vh;
+  background: #f1f1f1;
+}
+
+.container .content .cards {
+  padding: 20px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container .content .cards .card {
+  width: 250px;
+  height: 150px;
+  color: #fe7c11;
+  background: white;
+  margin: 20px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0 4px 8px 0 #05042d, 0 6px 20px 0 #05042d;
+}
+
+.container .content .content-2 {
+  min-height: 60vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+label,input{
+  display: block;
+  line-height: 30px;
+}
+
+form{
+  width:330px;
+  background-color: red;
+}

@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  background-color: #05042d;
+}
+nav.top {
+  width: 100%;
+  height: 70px;
+  background-color: white;
+  padding: 20px;
+}
+nav.top > img {
+  width: 140px;
+}
+nav .login {
+  width: 40px;
+  float: right;
+  margin-right: 25px;
+  color: #fe7c11;
+}
+nav .login img {
+  width: 30px;
+  height: 30px;
+  transition: 0.7s;
+}
+/*nav .login img:hover {
+  width: 40px;
+  height: 40px;
+}*/
+
+/*-----------------header-Menu-------------*/
+
+#header {
+  max-width: 1280px;
+  height: 60px;
+  color: white;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+ul {
+  width: 500px;
+  height: 50px;
+}
+ul li {
+  display: inline-block;
+  margin-top: 20px;
+}
+ul li a {
+  height: 30px;
+  transition: 0.2s;
+  text-decoration: none;
+
+  color: white;
+}
+ul li a:hover {
+  color: #fe7c11;
+}
+
+/***************Main principal*/
+main {
+  height: 900px;
+  position: relative;
+}
+.Slides {
+  width: 100%;
+  height: 900px;
+}
+
+.primeiroSlide {
+  height: 900px;
+  background-image: url('/Web-Project-Univercity/img/Ativo\ 3.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.segundoSlide {
+  height: 900px;
+  background-image: url('../img/Ativo\ 4.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.terceiroSlide {
+  height: 900px;
+  background-image: url('../img/Ativo\ 6.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+div.uniluanda {
+  width: 900px;
+  height: 900px;
+  position: absolute;
+  margin-left: 70px;
+  top: 0px;
+}
+div.uniluanda img {
+  width: 400px;
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+.grelhas {
+  width: 900px;
+  height: 200px;
+  /*margin-left: 100px;*/
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+}
+
+.grelha {
+  width: 200px;
+  height: 200px;
+  float: left;
+  margin-right: 10px;
+}
+.grelha.um {
+  background-color: rgba(255, 116, 4, 0.9);
+}
+.grelha.dois {
+  background-color: rgba(5, 4, 45, 0.9);
+}
+
+.grelha.um:nth-child(1) {
+  transition: 0.3s;
+}
+.grelha.um:nth-child(1):hover {
+  background-color: rgb(255, 116, 4, 0.8);
+}
+
+.grelha.um:nth-child(3) {
+  transition: 0.3s;
+}
+.grelha.um:nth-child(3):hover {
+  background-color: rgb(255, 116, 4, 0.8);
+}
+.grelha.dois:nth-child(2) {
+  transition: 0.3s;
+}
+.grelha.dois:nth-child(2):hover {
+  background-color: rgb(5, 4, 45, 0.8);
+}
+.grelha.dois:nth-child(4) {
+  transition: 0.3s;
+}
+.grelha.dois:nth-child(4):hover {
+  background-color: rgb(5, 4, 45, 0.8);
+}
+.grelha h4 {
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+p {
+  color: white;
+}
+footer > p {
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-bottom: 50px;
+}
