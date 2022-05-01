@@ -41,7 +41,7 @@
       <div class="content">
         <div class="content">
           <div class="cards">
-            <a href="dash.php">
+            <a href="estudante.php">
               <div class="card">
                 <div class="box">
                   <h3>Estudantes</h3>
@@ -52,7 +52,7 @@
               </div>
             </a>
 
-            <a href="">
+            <a href="dash.php">
               <div class="card">
                 <div class="box">
                   <h3>Candidatos</h3>
@@ -62,8 +62,6 @@
                 </div>
               </div>
             </a>
-
-
           </div>
           <!--container-->
 
