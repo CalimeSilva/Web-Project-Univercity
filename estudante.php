@@ -1,6 +1,7 @@
 <?php
 require_once 'crudPDO.php';
 $crud = new Candidato("tbuniversidade", "localhost", "root", "");
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -32,21 +33,37 @@ $crud = new Candidato("tbuniversidade", "localhost", "root", "");
       echo "Preencha todos os campos por favor*";
     }
   }
+  $nameErr = $emailErr = $genderErr = $websiteErr = "";
+  $name = $email = $gender = $comment = $website = "";
+
+  if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (empty($_POST["name"])) {
+      $nameErr = "Name is required";
+    } else {
+      $name = test_input($_POST["name"]);
+      // check if name only contains letters and whitespace
+      if (!preg_match("/^[a-zA-Z-' ]*$/", $name)) {
+        $nameErr = "Only letters and white space allowed";
+      }
+    }
+  }
   ?>
+
+
   <section id="cadastro">
-    <form method="POST">
+    <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
       <p>Cadastro de Estudantes Admin</p>
 
       <div class="DadosObrigatorios input">
-        <label for="nome">Nome Completo:</label><input type="text" placeholder="Nome Completo" maxlength="30" minlength="10" required name="nome" />
+        <label for="nome">Nome Completo:</label><input type="text" placeholder="Nome Completo" name="nome" /><span class="erro">* <?php echo $nomeErro; ?> </span>
         <br />
-        <label for="curso">Curso</label><input type="text" placeholder="Curso" name="bi" />
+        <label for="curso">Curso</label><input type="text" placeholder="Curso" name="bi" /><span class="erro">* <?php echo $nomeErro; ?> </span>
         <br />
-        <label for="Ano">Ano Curricular:</label><input name="ano" />
+        <label for="Ano">Ano Curricular:</label><input name="ano" /><span class="erro">* <?php echo $nomeErro; ?> </span>
         <br />
-        <label for="tipo">Tipo de estudante:</label><input name="tipo" />
+        <label for="tipo">Tipo de estudante:</label><input name="tipo" /><span class="erro">* <?php echo $nomeErro; ?> </span>
         <br />
-        <label for="telefone">Telefone:</label><input name="tel" />
+        <label for="telefone">Telefone:</label><input name="tel" /><span class="erro">* <?php echo $nomeErro; ?> </span>
       </div>
 
       <!--Dados gerais-->
