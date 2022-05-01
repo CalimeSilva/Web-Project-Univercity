@@ -18,15 +18,23 @@ class Candidato
   }
 
   //função para preencher a tabela no dashboard admin
-  public function buscarDados()
+  public function buscarDadosCandidatos()
   {
     $res = array();
-    $cmd = $this->pdo->query("SELECT * FROM candidatos ORDER BY nome");
+    $cmd = $this->pdo->query("SELECT * FROM candidato ORDER BY nome");
+    $res = $cmd->fetchAll(PDO::FETCH_ASSOC);
+    return $res;
+  }
+
+  public function buscarDadosEstudantes()
+  {
+    $res = array();
+    $cmd = $this->pdo->query("SELECT * FROM estudante ORDER BY nome");
     $res = $cmd->fetchAll(PDO::FETCH_ASSOC);
     return $res;
   }
   //função para cadastrar 
-  public function cadastrarCandidato($nome, $bi, $email, $telefone, $curso, $genero, $user, $senha)
+  public function cadastrarCandidato($nome, $bi, $email, $telefone, $genero, $curso)
   {
     //verificar se ja esta cadastrado
 
@@ -37,15 +45,14 @@ class Candidato
     if ($cmd->rowCount() > 0) {
       return false;
     } else {
-      $cmd->$this->pdo->prepare("INSERT INTO candidatos(nome, bi, email, telefone, curso, genero, username, senha) VALUES (:nom, :bi, :em, :tel, :cur, :gene, :user, :senha)");
+      $cmd->$this->pdo->prepare("INSERT INTO candidatos(nome, bi, email, telefone, genero, curso) VALUES (:nom, :bi, :em, :tel, :gene, :cur )");
       $cmd->bindValue(":nom", $nome);
       $cmd->bindValue(":bi", $bi);
       $cmd->bindValue(":em", $email);
       $cmd->bindValue(":tel", $telefone);
-      $cmd->bindValue(":cur", $curso);
       $cmd->bindValue(":gene", $genero);
-      $cmd->bindValue(":user", $user);
-      $cmd->bindValue(":senha", $senha);
+      $cmd->bindValue(":cur", $curso);
+      return true;
       $cmd->execute();
     }
   }
